@@ -42,7 +42,7 @@ std::string make_container_std_alloc()
 }
 
 
-TEST(IP_LIST, custom_alloc)
+TEST(CUSTOM_ALLOC, custom_alloc)
 {
     auto res = make_container_custom_alloc();
     std::string comp{};
@@ -56,7 +56,7 @@ TEST(IP_LIST, custom_alloc)
     EXPECT_EQ(res, comp);
 }
 
-TEST(IP_LIST, std_alloc)
+TEST(CUSTOM_ALLOC, std_alloc)
 {
     auto res = make_container_std_alloc();
     std::string comp{};
